@@ -14,9 +14,9 @@ Implementation and comparison of two dimensionality reduction techniques — Haa
 ### Elapsed Time (1,000 samples)
 | Space | Time | Speedup vs Original |
 |---|---|---|
-| Original (128 features) | 0.9723s | 1x |
-| Wavelet (4 features) | 0.0367s | 26.5x |
-| PCA (4 features) | 0.0340s | 28.6x |
+| Original (128 features) | 0.8177s | 1x |
+| Wavelet (4 features) | 0.0303s | 26.5x |
+| PCA (4 features) | 0.0299s | 28.6x |
 
 ![Timing Comparison](plots/timing_comparison.png)
 
