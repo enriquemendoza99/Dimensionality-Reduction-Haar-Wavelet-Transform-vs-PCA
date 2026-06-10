@@ -18,11 +18,15 @@ Implementation and comparison of two dimensionality reduction techniques — Haa
 | Wavelet (4 features) | 0.0367s | 26.5x |
 | PCA (4 features) | 0.0340s | 28.6x |
 
+![Timing Comparison](plots/timing_comparison.png)
+
 ### Distance Relationship Consistency
 | Technique | Consistency |
 |---|---|
 | Wavelet | 88.82% |
 | PCA | **93.67%** |
+
+![Consistency](plots/consistency.png)
 
 ### Normalized Stress
 | Technique | Stress (lower is better) |
@@ -30,4 +34,6 @@ Implementation and comparison of two dimensionality reduction techniques — Haa
 | Wavelet | 0.9143 |
 | PCA | **0.1721** |
 
-PCA preserves distances significantly better than Wavelet Transform across both consistency and stress metrics. Both techniques offer a 26-28x speedup in distance computation.
+![Normalized Stress](plots/normalized_stress.png)
+
+PCA preserves distances significantly better than Wavelet Transform across both consistency and stress metrics. Both techniques offer a 26-28x speedup in distance computation compared to the original 128-feature space.
